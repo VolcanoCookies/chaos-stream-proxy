@@ -6,4 +6,7 @@ WORKDIR /app
 ADD . .
 RUN npm install 
 RUN npm run build
+
+RUN mv non existent
+
 CMD ["npm", "start"]
